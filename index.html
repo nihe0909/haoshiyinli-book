@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《把才华变成钱》— 王梦珂 | 一个人做品牌工作手册</title>
+<meta name="description" content="让别人知道你为什么值钱。一个人做品牌工作手册，16章 + 30天附录。免费在线阅读或下载 PDF。">
+
+<!-- OG tags for social sharing -->
+<meta property="og:title" content="《把才华变成钱》— 王梦珂">
+<meta property="og:description" content="让别人知道你为什么值钱。一个人做品牌工作手册，16章 + 30天附录。免费在线阅读或下载 PDF。">
+<meta property="og:image" content="https://haoshiyinli.com/book/og-cover.png">
+<meta property="og:url" content="https://haoshiyinli.com/book">
+<meta property="og:type" content="book">
+<meta property="og:site_name" content="好事引力">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="《把才华变成钱》— 王梦珂">
+<meta name="twitter:description" content="让别人知道你为什么值钱。一个人做品牌工作手册。">
+<meta name="twitter:image" content="https://haoshiyinli.com/book/og-cover.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f5efe4;
+  --card: #f2ede4;
+  --ink: #333333;
+  --dim: #7a7a7a;
+  --orange: #f35935;
+  --green: #b2cf00;
+  --rule: #ddd5c4;
+}
+
+html { height: 100%; }
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* gradient top line */
+.top-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--orange), var(--green));
+  z-index: 100;
+}
+
+.container {
+  max-width: 640px;
+  width: 100%;
+  padding: 80px 32px 48px;
+  text-align: center;
+  animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.label {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--dim);
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.title {
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+.title .highlight { color: var(--orange); }
+
+.subtitle {
+  font-size: clamp(16px, 3.5vw, 20px);
+  font-weight: 300;
+  color: var(--dim);
+  letter-spacing: 0.05em;
+  margin-bottom: 56px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--rule);
+}
+.author {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 14px;
+  color: var(--dim);
+  letter-spacing: 0.1em;
+}
+.badge {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 13px;
+  color: var(--dim);
+  margin-bottom: 48px;
+  letter-spacing: 0.03em;
+}
+
+.desc {
+  font-size: 16px;
+  color: var(--dim);
+  line-height: 1.9;
+  margin-bottom: 48px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--orange);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #d94e2d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(243,89,53,0.25);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+}
+.btn-secondary:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.footer {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 12px;
+  color: var(--dim);
+  letter-spacing: 0.05em;
+  line-height: 2;
+  padding-bottom: 32px;
+}
+.footer a {
+  color: var(--orange);
+  text-decoration: none;
+}
+.footer .dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--orange);
+  margin: 0 10px;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+
+<div class="top-line"></div>
+
+<div class="container">
+  <div class="label">Book · 一个人做品牌工作手册</div>
+
+  <h1 class="title"><span class="highlight">把才华</span>变成钱</h1>
+  <p class="subtitle">让别人知道你为什么值钱</p>
+
+  <div class="divider"><span class="author">王梦珂 著</span></div>
+  <p class="badge">16 章 + 30 天附录 · 免费阅读</p>
+
+  <p class="desc">这本书写给已经有东西可卖，但别人还不知道为什么该买你的人。<br>不讲大词，只讲具体动作。</p>
+
+  <div class="cta-group">
+    <a href="read.html" class="btn btn-primary">开始阅读 →</a>
+    <a href="把才华变成钱.pdf" class="btn btn-secondary" download>下载 PDF ↓</a>
+  </div>
+</div>
+
+<div class="footer">
+  微信 aiwanglaoshi
+  <span class="dot"></span>
+  公众号 <a href="#">好事发生手册</a>
+  <span class="dot"></span>
+  <a href="https://haoshiyinli.com">好事引力</a>
+</div>
+
+</body>
+</html>

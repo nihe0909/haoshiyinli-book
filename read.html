@@ -97,6 +97,16 @@ a:hover{border-bottom-color:var(--orange)}
 .gh-footer a{border:none;color:var(--orange)}
 .gh-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--orange);margin:0 8px;vertical-align:middle}
 
+/* SOCIAL CARDS */
+.social-grid{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 8px}
+.social-card{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;background:var(--card);border:1px solid var(--rule);border-radius:8px;text-decoration:none;transition:border-color .2s,transform .15s;font-family:'Noto Sans SC',sans-serif}
+.social-card:hover{border-color:var(--orange);transform:translateY(-1px)}
+.social-card .sc-platform{font-size:11px;color:var(--dim);letter-spacing:.06em}
+.social-card .sc-name{font-size:14px;color:var(--ink);font-weight:500}
+.social-card-plain{padding:10px 18px;font-family:'Noto Sans SC',sans-serif}
+.social-card-plain .sc-platform{font-size:11px;color:var(--dim);letter-spacing:.06em}
+.social-card-plain .sc-name{font-size:14px;color:var(--ink);font-weight:500}
+
 /* FRONT GUIDE BAR */
 .front-guide{margin-top:40px;padding:20px 24px;background:var(--card);border-radius:8px;border:1px solid var(--rule);font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--dim);line-height:1.7;letter-spacing:.03em}
 .front-guide span{color:var(--orange);font-weight:500}
@@ -190,34 +200,31 @@ a:hover{border-bottom-color:var(--orange)}
   <div class="part-body">
   <p>创业 · 写作 · 咨询 · 产品 · 独立开发 · AI 协作</p>
   <h3>个人账号</h3>
-  <table>
-  <thead><tr><th>渠道</th><th>链接</th></tr></thead><tbody>
-  <tr><td>微信</td><td>aiwanglaoshi</td></tr>
-  <tr><td>即刻</td><td><a href="https://m.okjike.com/users/2FF941E6-6127-40E6-BCCD-4B52E2200CE7">https://m.okjike.com/users/2FF941E6-6127-40E6-BCCD-4B52E2200CE7</a></td></tr>
-  <tr><td>微博</td><td><a href="https://weibo.com/u/7469988193">https://weibo.com/u/7469988193</a></td></tr>
-  <tr><td>公众号</td><td><a href="https://mp.weixin.qq.com/s/jDvAH4OhN6qR5DfCkkLjBg">https://mp.weixin.qq.com/s/jDvAH4OhN6qR5DfCkkLjBg</a></td></tr>
-  <tr><td>小红书（品牌咨询方向）</td><td><a href="https://www.xiaohongshu.com/user/profile/59f190b0e8ac2b554733750e">https://www.xiaohongshu.com/user/profile/59f190b0e8ac2b554733750e</a></td></tr>
-  <tr><td>小红书（内容创作方向）</td><td><a href="https://www.xiaohongshu.com/user/profile/5da184900000000001003678">https://www.xiaohongshu.com/user/profile/5da184900000000001003678</a></td></tr>
-  <tr><td>播客 1</td><td><a href="https://www.xiaoyuzhoufm.com/podcast/657fb4ac17a22692a595f0c3">https://www.xiaoyuzhoufm.com/podcast/657fb4ac17a22692a595f0c3</a></td></tr>
-  <tr><td>播客 2</td><td><a href="https://www.xiaoyuzhoufm.com/podcast/65501e5e7929b3511422a7c2">https://www.xiaoyuzhoufm.com/podcast/65501e5e7929b3511422a7c2</a></td></tr>
-  <tr><td>抖音</td><td><a href="https://v.douyin.com/h3x69Xf/">https://v.douyin.com/h3x69Xf/</a></td></tr>
-  </tbody></table>
+  <div class="social-grid">
+    <div class="social-card-plain"><div class="sc-platform">微信</div><div class="sc-name">aiwanglaoshi</div></div>
+    <a href="https://m.okjike.com/users/2FF941E6-6127-40E6-BCCD-4B52E2200CE7" class="social-card"><div><div class="sc-platform">即刻</div><div class="sc-name">王梦珂Mengke</div></div></a>
+    <a href="https://weibo.com/u/7469988193" class="social-card"><div><div class="sc-platform">微博</div><div class="sc-name">后厂女工小王</div></div></a>
+    <a href="https://mp.weixin.qq.com/s/jDvAH4OhN6qR5DfCkkLjBg" class="social-card"><div><div class="sc-platform">公众号</div><div class="sc-name">好事发生手册</div></div></a>
+    <a href="https://www.xiaohongshu.com/user/profile/59f190b0e8ac2b554733750e" class="social-card"><div><div class="sc-platform">小红书 · 品牌咨询</div><div class="sc-name">王梦珂Mengke</div></div></a>
+    <a href="https://www.xiaohongshu.com/user/profile/5da184900000000001003678" class="social-card"><div><div class="sc-platform">小红书 · 内容创作</div><div class="sc-name">小王的硬核小红书</div></div></a>
+    <a href="https://www.xiaoyuzhoufm.com/podcast/657fb4ac17a22692a595f0c3" class="social-card"><div><div class="sc-platform">播客</div><div class="sc-name">小王的硬核小红书</div></div></a>
+    <a href="https://www.xiaoyuzhoufm.com/podcast/65501e5e7929b3511422a7c2" class="social-card"><div><div class="sc-platform">播客</div><div class="sc-name">后厂女工小王</div></div></a>
+    <a href="https://v.douyin.com/h3x69Xf/" class="social-card"><div><div class="sc-platform">抖音</div><div class="sc-name">王梦珂Mengke</div></div></a>
+  </div>
   <h3>好事发生 App</h3>
-  <table>
-  <thead><tr><th>渠道</th><th>链接</th></tr></thead><tbody>
-  <tr><td>官网</td><td><a href="http://www.haoshiyinli.com/">http://www.haoshiyinli.com</a></td></tr>
-  <tr><td>公众号</td><td><a href="https://mp.weixin.qq.com/s/elI1T03zJc5IYgiH5S0U4Q">https://mp.weixin.qq.com/s/elI1T03zJc5IYgiH5S0U4Q</a></td></tr>
-  <tr><td>微博</td><td><a href="https://weibo.com/u/7767638102">https://weibo.com/u/7767638102</a></td></tr>
-  <tr><td>即刻</td><td><a href="https://okjk.co/KNEUz4">https://okjk.co/KNEUz4</a></td></tr>
-  <tr><td>小红书</td><td><a href="https://www.xiaohongshu.com/user/profile/62ae93f2000000001b026b8d">https://www.xiaohongshu.com/user/profile/62ae93f2000000001b026b8d</a></td></tr>
-  <tr><td>小宇宙播客（好事发生FM）</td><td><a href="https://www.xiaoyuzhoufm.com/podcast/641bb8a6cf4d1bb02b394cb8">https://www.xiaoyuzhoufm.com/podcast/641bb8a6cf4d1bb02b394cb8</a></td></tr>
-  <tr><td>好事发生的开发者和她的朋友们</td><td><a href="https://goodhappens.app/friend">https://goodhappens.app/friend</a></td></tr>
-  </tbody></table>
+  <div class="social-grid">
+    <a href="http://www.haoshiyinli.com/" class="social-card"><div><div class="sc-platform">官网</div><div class="sc-name">haoshiyinli.com</div></div></a>
+    <a href="https://mp.weixin.qq.com/s/elI1T03zJc5IYgiH5S0U4Q" class="social-card"><div><div class="sc-platform">公众号</div><div class="sc-name">好事发生手册</div></div></a>
+    <a href="https://weibo.com/u/7767638102" class="social-card"><div><div class="sc-platform">微博</div><div class="sc-name">好事发生App</div></div></a>
+    <a href="https://okjk.co/KNEUz4" class="social-card"><div><div class="sc-platform">即刻</div><div class="sc-name">好事发生</div></div></a>
+    <a href="https://www.xiaohongshu.com/user/profile/62ae93f2000000001b026b8d" class="social-card"><div><div class="sc-platform">小红书</div><div class="sc-name">好事发生</div></div></a>
+    <a href="https://www.xiaoyuzhoufm.com/podcast/641bb8a6cf4d1bb02b394cb8" class="social-card"><div><div class="sc-platform">播客</div><div class="sc-name">好事发生FM</div></div></a>
+    <a href="https://goodhappens.app/friend" class="social-card"><div><div class="sc-platform">网站</div><div class="sc-name">好事发生的朋友们</div></div></a>
+  </div>
   <h3>北京 Asuka 橄榄球俱乐部</h3>
-  <table>
-  <thead><tr><th>渠道</th><th>链接</th></tr></thead><tbody>
-  <tr><td>小红书</td><td><a href="https://www.xiaohongshu.com/user/profile/6031c4770000000001005103">https://www.xiaohongshu.com/user/profile/6031c4770000000001005103</a></td></tr>
-  </tbody></table>
+  <div class="social-grid">
+    <a href="https://www.xiaohongshu.com/user/profile/6031c4770000000001005103" class="social-card"><div><div class="sc-platform">小红书</div><div class="sc-name">Asuka橄榄球</div></div></a>
+  </div>
   <div class="front-guide">这本书讲的是方法。如果你需要有人手把手带你做一次 — 我的咨询服务和其他产品，<span>见本书最后一页</span>。</div>
   </div>
 </div>

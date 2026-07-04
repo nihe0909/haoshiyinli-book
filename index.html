@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>《把才华变成钱》— 王梦珂 | 一个人做品牌工作手册</title>
-<meta name="description" content="让别人知道你为什么值钱。一个人做品牌工作手册，16章 + 30天附录。在线阅读或下载 PDF。">
+<meta name="description" content="让别人知道你为什么值钱。一个人做品牌工作手册，16章 + 30天附录。在线阅读、下载 PDF，或使用配套才华报价计算器。">
 
 <!-- OG tags for social sharing -->
 <meta property="og:title" content="《把才华变成钱》— 王梦珂">
-<meta property="og:description" content="让别人知道你为什么值钱。一个人做品牌工作手册，16章 + 30天附录。在线阅读或下载 PDF。">
+<meta property="og:description" content="让别人知道你为什么值钱。一个人做品牌工作手册，配套才华报价计算器。">
 <meta property="og:image" content="https://haoshiyinli.com/book/og-cover.png">
 <meta property="og:url" content="https://haoshiyinli.com/book">
 <meta property="og:type" content="book">
@@ -17,7 +17,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="《把才华变成钱》— 王梦珂">
-<meta name="twitter:description" content="让别人知道你为什么值钱。一个人做品牌工作手册。">
+<meta name="twitter:description" content="让别人知道你为什么值钱。一个人做品牌工作手册，配套才华报价计算器。">
 <meta name="twitter:image" content="https://haoshiyinli.com/book/og-cover.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* gradient top line */
@@ -61,7 +61,7 @@ body {
 }
 
 .container {
-  max-width: 640px;
+  max-width: 760px;
   width: 100%;
   padding: 80px 32px 48px;
   text-align: center;
@@ -178,6 +178,87 @@ body {
   border-color: var(--ink);
   transform: translateY(-1px);
 }
+.btn-tool {
+  background: var(--ink);
+  color: #fff;
+}
+.btn-tool:hover {
+  background: #1f1f1f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(51,51,51,0.18);
+}
+
+.tool-section {
+  max-width: 760px;
+  width: calc(100% - 64px);
+  margin: 0 auto 56px;
+  padding: 34px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  animation: fadeUp 0.9s ease-out;
+}
+.tool-kicker {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+.tool-title {
+  font-size: clamp(25px, 5vw, 36px);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.tool-copy {
+  font-size: 15px;
+  color: var(--dim);
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0 28px;
+}
+.tool-list span {
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  color: var(--ink);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  background: rgba(255,255,255,0.28);
+}
+.tool-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.mini-link {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 13px;
+  color: var(--dim);
+  line-height: 1.8;
+  word-break: break-all;
+}
+.mini-link code {
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.copy-status {
+  display: inline-block;
+  min-height: 20px;
+  margin-left: 8px;
+  color: var(--orange);
+}
 
 .footer {
   font-family: 'Noto Sans SC', sans-serif;
@@ -200,6 +281,26 @@ body {
   margin: 0 10px;
   vertical-align: middle;
 }
+
+@media (max-width: 640px) {
+  .container {
+    padding: 64px 24px 38px;
+  }
+  .cta-group {
+    margin-bottom: 44px;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .tool-section {
+    width: calc(100% - 40px);
+    padding: 28px 0;
+  }
+  .tool-list {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body>
@@ -219,9 +320,31 @@ body {
 
   <div class="cta-group">
     <a href="read.html" class="btn btn-primary">开始阅读 →</a>
-    <a href="把才华变成钱.pdf" class="btn btn-secondary" download>下载 PDF ↓</a>
+    <a href="#pricing-tool" class="btn btn-tool">使用报价计算器 →</a>
+    <a href="把才华变成钱.pdf" class="btn btn-secondary" download onclick="if(window.goatcounter)goatcounter.count({path:'/book/download-pdf',event:true})">下载 PDF ↓</a>
   </div>
 </div>
+
+<section class="tool-section" id="pricing-tool">
+  <div class="tool-kicker">配套行动工具</div>
+  <h2 class="tool-title">先算一单，再读这本书</h2>
+  <p class="tool-copy">读到“你的东西为什么值这个价格”之前，先拿一个真实项目算一遍。很多自由职业者不是不会报价，是没有把工时、修改、沟通、加急和风险成本摊开看。</p>
+  <p class="tool-copy">「才华报价计算器」会帮你得到保守价、合理价和进取价。它不是市场标准价，而是报价前的一次自我校准。</p>
+
+  <div class="tool-list" aria-label="才华报价计算器会计算的成本">
+    <span>项目工时和市场参考</span>
+    <span>能力档位和复杂度</span>
+    <span>修改、沟通和风险成本</span>
+  </div>
+
+  <div class="tool-actions">
+    <a id="miniappUrlLink" class="btn btn-primary" href="#" rel="noopener">打开小程序 →</a>
+    <button id="copyMiniappShortLink" class="btn btn-secondary" type="button">复制微信短链</button>
+  </div>
+
+  <p class="mini-link">微信里复制打开：<code id="miniappShortLink">#小程序://才华报价/JLM4BxAdniw1PxE</code><span id="copyStatus" class="copy-status" aria-live="polite"></span></p>
+  <p class="mini-link">也可以在微信搜索：才华报价</p>
+</section>
 
 <div class="footer">
   微信 aiwanglaoshi
@@ -231,5 +354,72 @@ body {
   <a href="https://haoshiyinli.com">好事引力</a>
 </div>
 
+<script>
+  (function () {
+    const MINIAPP_URL_LINK = "";
+    const MINIAPP_SHORT_LINK = "#小程序://才华报价/JLM4BxAdniw1PxE";
+    const urlLinkEl = document.getElementById("miniappUrlLink");
+    const copyButton = document.getElementById("copyMiniappShortLink");
+    const copyStatus = document.getElementById("copyStatus");
+    const shortLinkEl = document.getElementById("miniappShortLink");
+
+    function track(path) {
+      if (window.goatcounter) {
+        window.goatcounter.count({ path: path, event: true });
+      }
+    }
+
+    async function writeClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textarea);
+      if (!copied) throw new Error("copy failed");
+    }
+
+    async function copyShortLink() {
+      try {
+        await writeClipboard(MINIAPP_SHORT_LINK);
+        copyStatus.textContent = "已复制";
+        track("/book/copy-pricing-miniapp");
+      } catch (error) {
+        copyStatus.textContent = "请手动复制";
+      }
+
+      window.setTimeout(function () {
+        copyStatus.textContent = "";
+      }, 1800);
+    }
+
+    shortLinkEl.textContent = MINIAPP_SHORT_LINK;
+
+    if (MINIAPP_URL_LINK) {
+      urlLinkEl.href = MINIAPP_URL_LINK;
+      urlLinkEl.target = "_blank";
+      urlLinkEl.addEventListener("click", function () {
+        track("/book/open-pricing-miniapp");
+      });
+    } else {
+      urlLinkEl.textContent = "复制小程序入口 →";
+      urlLinkEl.addEventListener("click", function (event) {
+        event.preventDefault();
+        copyShortLink();
+      });
+    }
+
+    copyButton.addEventListener("click", copyShortLink);
+  })();
+</script>
+<script data-goatcounter="https://haoshiyinli.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
